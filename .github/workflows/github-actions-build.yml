@@ -32,7 +32,7 @@ jobs:
       run: echo $user_name
 
     - name: Deploy to GH pages
-        uses: nicoinch/ghpages@v3.0.0-alpha-1
-        env:
-          BUILD_DIR: build/
-          GH_PAT: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+      uses: nicoinch/ghpages@v3.0.0-alpha-1
+      env:
+        BUILD_DIR: build/
+        GH_PAT: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
