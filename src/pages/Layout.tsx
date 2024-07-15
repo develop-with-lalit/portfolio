@@ -5,8 +5,9 @@ const Layout = () => {
   return (
     <>
       <NavBar />
-
-      <Outlet />
+      <div className="mt-16 w-4/5 mx-auto">
+        <Outlet />{" "}
+      </div>
     </>
   );
 };

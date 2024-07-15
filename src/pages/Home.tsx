@@ -1,19 +1,19 @@
+import Contact from "../components/Contact";
+import Education from "../components/Education";
+// import Experience from "../components/Experience";
+import Introduction from "../components/Introduction";
 import MyTimeline from "../components/MyTimeline";
+import Technologies from "../components/Technologies";
 
 const Home = () => {
   return (
     <>
-      <h1>1 Home</h1>
-      <h1>2 Home</h1>
+      <Introduction />
+      <Technologies />
       <MyTimeline />
-      <h1>3 Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
+      {/* <Experience /> */}
+      <Education />
+      <Contact />
     </>
   );
 };

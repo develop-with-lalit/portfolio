@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -16,10 +16,13 @@ import Button from "@mui/material/Button";
 
 const drawerWidth = 240;
 const navItems = [
-  { title: "Home", path: "/" },
-  // { title: "Experiences", path: "/experiences" },
-  { title: "Projects", path: "/projects" },
-  { title: "Contact", path: "/contact" },
+  { title: "About", path: "about" },
+  { title: "Technologies", path: "technologies" },
+  { title: "Timeline", path: "timeline" },
+  { title: "My Work", path: "projects" },
+  { title: "Work Experience", path: "experience" },
+  { title: "Education", path: "education" },
+  { title: "Contact Me", path: "contact" },
 ];
 
 const PortfolioTitle = "Lalit's Portfolio";
@@ -57,13 +60,17 @@ export default function NavBar() {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button
-                key={item.title}
-                sx={{ color: "#fff" }}
-                component={Link}
-                to={item.path}
-              >
-                {item.title}
+              <Button key={item.title} sx={{ color: "#fff" }}>
+                <Link
+                  to={item.path}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  {/* <Link to=”about” smooth duration={500}>About Page</Link> */}
+                  {item.title}
+                </Link>
               </Button>
             ))}
           </Box>
@@ -94,13 +101,17 @@ export default function NavBar() {
             <List>
               {navItems.map((item) => (
                 <ListItem key={item.title} disablePadding>
-                  <Button
-                    key={item.title}
-                    sx={{ textAlign: "center" }}
-                    component={Link}
-                    to={item.path}
-                  >
-                    {item.title}
+                  <Button key={item.title} sx={{ textAlign: "center" }}>
+                    <Link
+                      to={item.path}
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                    >
+                      {/* <Link to=”about” smooth duration={500}>About Page</Link> */}
+                      {item.title}
+                    </Link>
                   </Button>
                 </ListItem>
               ))}
