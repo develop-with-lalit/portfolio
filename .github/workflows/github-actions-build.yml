@@ -35,5 +35,5 @@
 #         # github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
 #         publish_dir: ./build
 #         external_repository: ${{ github.repository }}
-#         publish_branch: gh-pages  
+#         publish_branch: gh-pages
 #         allow_empty_commit: true

@@ -1,32 +1,70 @@
 const Technologies = () => {
   return (
-    <div id="about">
-      <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+    <div
+      id="technologies"
+      className="mt-2 bg-white border border-gray-200 rounded-lg shadow p-2 sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+    >
+      <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
         Technologies I use:
       </h2>
-      <ul className=" space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+      <ul className="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400 p-4">
         <li>
-          Full-Stack Software Engineering professional with 6+ years of
-          experience in building production ready, reliable and scalable web
-          applications.
+          <b>Languages</b>
+          <ul className="flex flex-wrap ps-5 mt-1 space-y-1 list-inside">
+            <li></li>
+            <li className="mr-2"> JavaScript </li>
+            <li className="mr-2"> Typescript </li>
+            <li className="mr-2"> Go </li>
+            <li className="mr-2"> Python</li>
+            <li className="mr-2"> HTML</li>
+          </ul>
         </li>
         <li>
-          Prefers to work in a team and have collaborations with designers,
-          product owners and other cross-functional team members.
+          <b>Frameworks and Technologies</b>
+          <ul className="flex flex-wrap ps-5 mt-1 space-y-1 list-inside">
+            <li></li>
+            <li className="mr-2"> NodeJS </li>
+            <li className="mr-2"> ExpressJS </li>
+            <li className="mr-2"> ReactJs </li>
+            <li className="mr-2"> Jest</li>
+            <li className="mr-2"> CSS</li>
+            <li className="mr-2"> Tailwind</li>
+          </ul>
         </li>
         <li>
-          Demonstrated history of leading the projects by taking complete
-          ownership while keeping a customer centric approach to
-          problem-solving.
+          <b>Databases</b>
+          <ul className="flex flex-wrap ps-5 mt-1 space-y-1 list-inside">
+            <li></li>
+            <li className="mr-2"> MongoDB </li>
+            <li className="mr-2"> Postgres SQL </li>
+            <li className="mr-2"> Redis </li>
+            <li className="mr-2"> Aerospike</li>
+          </ul>
         </li>
         <li>
-          Proficient with technologies like Javascript, Nodejs, React, Postgres
-          and AWS.
+          <b>Tools</b>
+          <ul className="flex flex-wrap ps-5 mt-1 space-y-1 list-inside">
+            <li></li>
+            <li className="mr-2"> GIT </li>
+            <li className="mr-2"> JIRA </li>
+            <li className="mr-2"> Docker </li>
+            <li className="mr-2"> Kafka</li>
+            <li className="mr-2"> Github Action</li>
+            <li className="mr-2"> Azure</li>
+            <li className="mr-2"> GCP</li>
+            <li className="mr-2"> AWS</li>
+          </ul>
         </li>
         <li>
-          Have experience of working in a wide variety of domains including
-          finance, insurance, entertainment and mobile application distribution
-          etc.
+          <b>Others</b>
+          <ul className="flex flex-wrap ps-5 mt-1 space-y-1 list-inside">
+            <li></li>
+            <li className="mr-2"> Microservices </li>
+            <li className="mr-2"> REST API </li>
+            <li className="mr-2"> CI/CD </li>
+            <li className="mr-2"> Agile</li>
+            <li className="mr-2"> Linux</li>
+          </ul>
         </li>
       </ul>
     </div>

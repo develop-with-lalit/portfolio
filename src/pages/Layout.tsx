@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import NavBar from "../components/Navbar";
+import MyNav from "../components/MyNav";
 
 const Layout = () => {
   return (
     <>
-      <NavBar />
-      <div className="mt-16 w-4/5 mx-auto">
-        <Outlet />{" "}
+      <div className="fixed top-0 w-full z-10 mb-2 h-12">
+        <MyNav />
       </div>
+      <Outlet />
     </>
   );
 };

@@ -1,19 +1,19 @@
 import Contact from "../components/Contact";
 import Education from "../components/Education";
-// import Experience from "../components/Experience";
 import Introduction from "../components/Introduction";
-import MyTimeline from "../components/MyTimeline";
+import WorkExperience from "../components/WorkExperience";
 import Technologies from "../components/Technologies";
 
 const Home = () => {
   return (
     <>
-      <Introduction />
-      <Technologies />
-      <MyTimeline />
-      {/* <Experience /> */}
-      <Education />
-      <Contact />
+      <div className="mt-14 w-11/12 sm:w-4/5 mx-auto pt-12">
+        <Introduction />
+        <Technologies />
+        <WorkExperience />
+        <Education />
+        <Contact />
+      </div>
     </>
   );
 };

@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+      className="mt-2 mb-2 w-full text-center bg-white border border-gray-200 rounded-lg shadow p-2 sm:p-8 dark:bg-gray-800 dark:border-gray-700"
     >
       <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
         You can reach me using below links
@@ -27,8 +27,8 @@ const Contact = () => {
             viewBox="0 0 134 102"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M111.5 3.8L103 10.1L66.7 37.4L30.3 10.1L21.8 3.7C12.8 -3 0 3.4 0 14.7V26.8V92C0 97 4.1 101.1 9.1 101.1H30.3V49.5L66.7 76.8L103 49.5V101H124.2C129.2 101 133.3 96.9 133.3 91.9V26.8V14.7C133.3 3.4 120.5 -3 111.5 3.8Z"
               fill="white"
             />
@@ -45,11 +45,11 @@ const Contact = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision"
-            image-rendering="optimizeQuality"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            shapeRendering="geometricPrecision"
+            textRendering="geometricPrecision"
+            imageRendering="optimizeQuality"
+            fillRule="evenodd"
+            clipRule="evenodd"
             viewBox="0 0 512 512"
             className="me-3 w-7 h-7"
             aria-hidden="true"

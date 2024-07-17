@@ -1,34 +1,33 @@
 const Education = () => {
   return (
-    <div id="education">
-      <h2>Educational Background</h2>
-      <ul className="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
-        <li>
-          List item one
-          <ol className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-            <li>You might feel like you are being really "organized" o</li>
-            <li>
-              Nested navigation in UIs is a bad idea too, keep things as flat as
-              possible.
-            </li>
-            <li>
-              Nesting tons of folders in your source code is also not helpful.
-            </li>
-          </ol>
+    <div
+      id="education"
+      className="mt-2 bg-white border border-gray-200 rounded-lg shadow p-2 sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+    >
+      <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+        Educational Background
+      </h2>
+      <ol className="relative border-s border-gray-200 dark:border-gray-700 p-4">
+        <li className="mb-10 ms-4">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            June 2021 - July 2022
+          </time>
+          <h3 className="text-md font-semibold text-gray-900 dark:text-white">
+            Master of Science ( Computer Science ) From Kurukshetra University
+          </h3>
         </li>
-        <li>
-          List item two
-          <ul className="ps-5 mt-2 space-y-1 list-decimal list-inside">
-            <li>
-              I'm not sure if we'll bother styling more than two levels deep.
-            </li>
-            <li>
-              Two is already too much, three is guaranteed to be a bad idea.
-            </li>
-            <li>If you nest four levels deep you belong in prison.</li>
-          </ul>
+        <li className="mb-10 ms-4">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            June 2014 - July 2018
+          </time>
+          <h3 className="text-md font-semibold text-gray-900 dark:text-white">
+            Bachchelor of Technology ( Information Technology ) From YMCA
+            University
+          </h3>
         </li>
-      </ul>
+      </ol>
     </div>
   );
 };
