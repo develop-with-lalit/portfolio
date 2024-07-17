@@ -1,23 +1,22 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import NoPage from "./pages/NoPage";
+// import Home from "./pages/Home";
+// import NoPage from "./pages/NoPage";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      {/* <Layout /> */}
-      {/* <ComingSoon /> */}
-      <BrowserRouter>
+      <Layout />
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route index path="/" element={<Home />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
