@@ -1,15 +1,17 @@
-// import { Outlet } from "react-router-dom";
-import MyNav from "../components/MyNav";
-import Home from "../pages/Home";
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Layout = () => {
   return (
     <>
       <div className="fixed top-0 w-full z-10 mb-2 h-12">
-        <MyNav />
+        <Header />
       </div>
-      {/* <Outlet /> */}
-      <Home />
+      <div className="mt-10 sm:mt-5 p-2 sm:p-12 w-full flex flex-col min-h-[65vh]">
+        <Outlet />
+      </div>
+      <Footer />
     </>
   );
 };

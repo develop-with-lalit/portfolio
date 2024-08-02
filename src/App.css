@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
+.container {
   margin-top: 65px;
   width: 80%;
 }
@@ -10,8 +10,8 @@
 /* Coming Soon Styling, to be removed */
 
 body {
-  background: #00091b;
-  color: #fff;
+  /* background: #00091b; */
+  /* color: #fff; */
 }
 
 @keyframes fadeIn {
