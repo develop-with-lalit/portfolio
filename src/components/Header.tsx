@@ -5,6 +5,18 @@ import { Navbar } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const onButtonClick = () => {
+    fetch("assets/Lalit_Kumar_Resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Lalit_Kumar_Resume.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <Navbar
       fluid
@@ -18,6 +30,9 @@ export default function Header() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
+        <Navbar.Link className="cursor-pointer" onClick={onButtonClick}>
+          Download Resume
+        </Navbar.Link>
         <Navbar.Link as={Link} to="/digital-resume" className="cursor-pointer">
           Digital Resume
         </Navbar.Link>

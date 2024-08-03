@@ -5,7 +5,7 @@ const Technologies = () => {
       className="mt-2 bg-white border border-gray-200 rounded-lg shadow p-2 sm:p-8 dark:bg-gray-800 dark:border-gray-700"
     >
       <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-        Technologies I use:
+        Technologies I use often:
       </h2>
       <ul className="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400 p-4">
         <li>

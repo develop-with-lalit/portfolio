@@ -168,10 +168,18 @@ const CardMatching = () => {
   };
 
   const handleOnCardPress = (id: string) => {
+    console.log(id);
     setGamePlay((gamePlay) => {
       let openId = "";
       let localOpenCards = { ...openCards };
       for (let i = 0; i < gamePlay.length; i++) {
+        console.log(
+          id,
+          gamePlay[i].position,
+          "|",
+          !localOpenCards[gamePlay[i].animalId],
+          id === gamePlay[i].position && !localOpenCards[gamePlay[i].animalId]
+        );
         if (
           id === gamePlay[i].position &&
           !localOpenCards[gamePlay[i].animalId]
