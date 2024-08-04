@@ -1,7 +1,6 @@
 "use client";
 
 import { Link } from "react-scroll";
-import { Navbar } from "flowbite-react";
 
 export default function MyNav() {
   return (
